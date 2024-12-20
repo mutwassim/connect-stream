@@ -26,6 +26,12 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
     qt_add_executable(connect-stream
         MANUAL_FINALIZATION
         ${PROJECT_SOURCES}
+        LoginDialog.h
+        LinkedList.h
+        Stack.h
+        LinkedList.cpp
+        Stack.cpp
+        LoginDialog.cpp
     )
 # Define target properties for Android with Qt 6 as:
 #    set_property(TARGET connect-stream APPEND PROPERTY QT_ANDROID_PACKAGE_SOURCE_DIR
