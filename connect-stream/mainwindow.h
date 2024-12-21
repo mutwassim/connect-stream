@@ -1,6 +1,7 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
-
+#include "LinkedList.h"
+#include "Stack.h"
 #include <QMainWindow>
 
 QT_BEGIN_NAMESPACE
@@ -18,9 +19,13 @@ public:
     ~MainWindow();
 
 private slots:
-    void on_pushButton_clicked();
+    void onLoginButtonClicked();
+
+    void onSignupButtonClicked();
 
 private:
     Ui::MainWindow *ui;
+    LinkedList users;
+    Stack navigationStack;
 };
 #endif // MAINWINDOW_H
